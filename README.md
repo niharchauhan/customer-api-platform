@@ -62,7 +62,7 @@ Update `src/main/resources/application.properties`:
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/customer_db
 spring.datasource.username=root
-spring.datasource.password=
+spring.datasource.password=<your-password>
 spring.jpa.hibernate.ddl-auto=update
 ```
 
@@ -151,7 +151,7 @@ docker run -d \
   -e DB_PORT=3306 \
   -e DB_NAME=customer_db \
   -e DB_USER=root \
-  -e DB_PASSWORD= \
+  -e DB_PASSWORD=<your-password> \
   --name customer-api \
   customer-api-service
 ```
