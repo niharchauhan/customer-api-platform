@@ -6,7 +6,7 @@ This step involves packaging the Customer API into a Docker container to ensure 
 
 ## Dockerfile
 
-The project includes a `Dockerfile` that defines how to build the container:
+The project includes a `Dockerfile` that defines how to build the container.
 
 ---
 
@@ -31,7 +31,7 @@ docker run -d \
   -e DB_PORT=3306 \
   -e DB_NAME=customer_db \
   -e DB_USER=root \
-  -e DB_PASSWORD= \
+  -e DB_PASSWORD=<your-password> \
   --name customer-api \
   customer-api-service
 ```
