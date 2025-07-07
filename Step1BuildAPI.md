@@ -63,6 +63,6 @@ spring.jpa.show-sql=true
 
 ## Unit Testing
 
-Unit tests are written using **JUnit 5** and **Mockito** for the `CustomerService` class:
+Unit tests are written using **JUnit 5** and **Mockito** for the `CustomerService` class.
 
 ---
