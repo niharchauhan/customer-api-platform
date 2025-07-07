@@ -21,7 +21,7 @@ Make sure MySQL is running and configured correctly, then run:
 
 ```bash
 cd customer-api-service
-mvn test
+mvn test -Dspring.profiles.active=test
 ```
 
 Maven will automatically run all unit and integration test cases.
