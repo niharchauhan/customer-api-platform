@@ -108,7 +108,7 @@ In `src/main/java/cli/CommandLineApp.java`, update this line:
 private static final String BASE_URL = "http://<URL>/api/customers";
 ```
 
-Make sure it matches the URL matches the actual host and port where the Spring Boot API is running.
+Make sure the URL matches the actual host and port where the Spring Boot API is running.
 
 ---
 
@@ -198,7 +198,7 @@ This project could use GitHub Actions:
   - Create Docker image
   - Deploy to Kubernetes using `kubectl apply`
 
-Aautomated gates ensure code quality and controlled deployment.
+Automated gates ensure code quality and controlled deployment.
 
 Please look at `ci-cd-pipeline.yml` for details.
 
