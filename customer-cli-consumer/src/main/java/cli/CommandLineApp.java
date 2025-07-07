@@ -113,7 +113,7 @@ public class CommandLineApp {
         int status = conn.getResponseCode();
 
         Scanner scanner;
-        if (status == 200) {
+        if (status >= 200 && status < 300) {
             scanner = new Scanner(conn.getInputStream());
         } else {
             scanner = new Scanner(conn.getErrorStream());

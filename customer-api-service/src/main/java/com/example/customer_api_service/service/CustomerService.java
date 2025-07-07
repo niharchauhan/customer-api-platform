@@ -36,7 +36,13 @@ public class CustomerService {
 
     public Optional<Customer> getCustomerById(UUID id) {
         logger.debug("Looking up customer by ID: {}", id);
-        return repository.findById(id);
+        Optional<Customer> existingCustomerOpt = repository.findById(id);
+
+        if (existingCustomerOpt.isEmpty()) {
+            logger.error("Customer not found with ID: {}", id);
+            throw new RuntimeException("Customer not found");
+        }
+        return existingCustomerOpt;
     }
 
     public Customer updateCustomer(UUID id, Customer updatedCustomer) {
