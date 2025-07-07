@@ -1,4 +1,4 @@
-# 📦 Step 5: Kubernetes Deployment Guide
+# Step 5: Kubernetes Deployment Guide
 
 This document outlines the process to prepare and deploy the `customer-api-service` Spring Boot application into a Kubernetes environment using **Minikube**.
 
