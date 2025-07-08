@@ -10,7 +10,7 @@ import java.util.UUID;
 public class CommandLineApp {
     private static final Scanner scanner = new Scanner(System.in);
     private static final ObjectMapper objectMapper = new ObjectMapper();
-    private static final String BASE_URL = "http://127.0.0.1:54466/api/customers";
+    private static final String BASE_URL = "http://127.0.0.1:64394/api/customers";
 
     public static void main(String[] args) throws Exception {
         while (true) {
